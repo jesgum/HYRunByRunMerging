@@ -82,5 +82,23 @@ If the installation of the `tqdm` is successful, the following message should be
 
 In case you are still facing this error after following the above instructions, please find help in the `Others` category.
 
+### /bin/sh: 1: parallel: not found
+You will see this error if you are using the option to download using parallel jobs and you are missing the `parallel` package. This can be solved by either disabling parallel download as described above, or by istalling the package with the appropriate package manager.
+
+- Debian/Ubuntu:
+```
+sudo apt-get install parallel
+```
+
+- CentOS/RHEL:
+```
+sudo yum install parallel
+```
+
+- macOS:
+```
+brew install parallel
+```
+
 ### Others
 In case you are facing difficulties: please contact me either on Mattermost (rschotte) or via mail (romain.schotter@cern.ch).
